@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DUG-ky-XbU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Day Finder-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DayFinderViewController" customModule="Convert_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_1" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-xe-RbE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yDT-xe-RbE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H2a-rP-adc"/>
+                            <constraint firstItem="yDT-xe-RbE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WHW-ZH-F3G"/>
+                            <constraint firstItem="yDT-xe-RbE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WWl-Yo-3QY"/>
+                            <constraint firstAttribute="bottom" secondItem="yDT-xe-RbE" secondAttribute="bottom" id="vnr-FD-NFx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Day Finder" id="dRp-EK-xie">
+                        <barButtonItem key="leftBarButtonItem" title="Moon" image="moon.circle" catalog="system" id="L4b-QV-GQJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="ZKY-0Y-WqH" kind="presentation" id="ild-yc-sLy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Info" image="info.circle" catalog="system" id="fQM-Se-uV0">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="TjT-Ix-jzi" kind="presentation" id="5w7-qC-dAs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862.3188405797102" y="116.51785714285714"/>
+        </scene>
+        <!--Temperature-->
+        <scene sceneID="E8x-Ki-q7A">
+            <objects>
+                <viewController id="W7b-PB-Joo" customClass="TempViewController" customModule="Convert_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jKs-Ve-Sp1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_2" translatesAutoresizingMaskIntoConstraints="NO" id="gv0-H9-5sk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0º C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-gT-wbf">
+                                <rect key="frame" x="87" y="206" width="240" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Cx8-G5-R0i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="yjp-JW-JPx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32º F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQh-lO-0xx">
+                                <rect key="frame" x="87" y="405" width="240" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="8Sh-iR-h2c"/>
+                                    <constraint firstAttribute="height" constant="80" id="nvC-TW-ZEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select control to convert Temperature" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYt-jc-3hE">
+                                <rect key="frame" x="67" y="605" width="280" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Oux-lM-FMX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="W6x-ck-w16"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nXd-Nc-Mhv">
+                                <rect key="frame" x="57" y="710" width="300" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="JFJ-J8-TdL"/>
+                                    <constraint firstAttribute="height" constant="31" id="rHJ-5Q-jRZ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Fahreinheit"/>
+                                    <segment title="Kelvin"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tempSegmentControlChanged:" destination="W7b-PB-Joo" eventType="valueChanged" id="m7n-pI-6Eg"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-100" maxValue="100" minimumValueImage="sun.min" catalog="system" maximumValueImage="sun.max.fill" translatesAutoresizingMaskIntoConstraints="NO" id="0bB-Le-1bF">
+                                <rect key="frame" x="57" y="331" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Q73-b8-e45"/>
+                                    <constraint firstAttribute="width" constant="296" id="rxB-6e-kxf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tempSliderChanged:forEvent:" destination="W7b-PB-Joo" eventType="valueChanged" id="o0W-uM-2gj"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zQy-PS-CtA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zQy-PS-CtA" firstAttribute="trailing" secondItem="zYt-jc-3hE" secondAttribute="trailing" constant="67" id="3ab-e2-RNu"/>
+                            <constraint firstItem="zQy-PS-CtA" firstAttribute="trailing" secondItem="xeH-gT-wbf" secondAttribute="trailing" constant="87" id="3mf-Ub-yYv"/>
+                            <constraint firstItem="zQy-PS-CtA" firstAttribute="trailing" secondItem="0bB-Le-1bF" secondAttribute="trailing" constant="59" id="4kS-GR-NcV"/>
+                            <constraint firstItem="0bB-Le-1bF" firstAttribute="top" secondItem="xeH-gT-wbf" secondAttribute="bottom" constant="45" id="Ayy-OR-rrY"/>
+                            <constraint firstItem="zYt-jc-3hE" firstAttribute="top" secondItem="RQh-lO-0xx" secondAttribute="bottom" constant="120" id="F2B-51-zjU"/>
+                            <constraint firstItem="zQy-PS-CtA" firstAttribute="trailing" secondItem="RQh-lO-0xx" secondAttribute="trailing" constant="87" id="FTS-5o-5Go"/>
+                            <constraint firstItem="zQy-PS-CtA" firstAttribute="trailing" secondItem="nXd-Nc-Mhv" secondAttribute="trailing" constant="57" id="Nc7-65-HgH"/>
+                            <constraint firstItem="xeH-gT-wbf" firstAttribute="leading" secondItem="zQy-PS-CtA" secondAttribute="leading" constant="87" id="Ob1-ze-rG4"/>
+                            <constraint firstItem="zYt-jc-3hE" firstAttribute="leading" secondItem="zQy-PS-CtA" secondAttribute="leading" constant="67" id="aOj-2q-3Jh"/>
+                            <constraint firstItem="0bB-Le-1bF" firstAttribute="leading" secondItem="zQy-PS-CtA" secondAttribute="leading" constant="59" id="etT-eq-Bik"/>
+                            <constraint firstItem="zQy-PS-CtA" firstAttribute="bottom" secondItem="nXd-Nc-Mhv" secondAttribute="bottom" constant="72" id="ilJ-Qj-W17"/>
+                            <constraint firstItem="xeH-gT-wbf" firstAttribute="top" secondItem="zQy-PS-CtA" secondAttribute="top" constant="66" id="jEL-Pu-hsl"/>
+                            <constraint firstItem="RQh-lO-0xx" firstAttribute="top" secondItem="0bB-Le-1bF" secondAttribute="bottom" constant="45" id="l6t-2k-f9W"/>
+                            <constraint firstItem="RQh-lO-0xx" firstAttribute="leading" secondItem="zQy-PS-CtA" secondAttribute="leading" constant="87" id="mmy-j3-boq"/>
+                            <constraint firstItem="nXd-Nc-Mhv" firstAttribute="leading" secondItem="zQy-PS-CtA" secondAttribute="leading" constant="57" id="pGF-1M-CtG"/>
+                            <constraint firstItem="nXd-Nc-Mhv" firstAttribute="top" secondItem="zYt-jc-3hE" secondAttribute="bottom" constant="45" id="tb0-hj-mm5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Temperature" id="afa-0A-64M">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="moon.circle" catalog="system" id="Gqh-QB-W2D">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="ZKY-0Y-WqH" kind="presentation" id="SBa-ZF-rwd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="ofb-Jy-aID">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="TjT-Ix-jzi" kind="presentation" id="3pc-hg-qJe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="xeH-gT-wbf" id="Tyf-ls-iqA"/>
+                        <outlet property="convertedTempLabel" destination="RQh-lO-0xx" id="9hP-Np-9TJ"/>
+                        <outlet property="tempSegmentControl" destination="nXd-Nc-Mhv" id="wcC-nm-kkm"/>
+                        <outlet property="tempSlider" destination="0bB-Le-1bF" id="XDf-xL-mkM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLW-NL-VSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.8695652173915" y="928.79464285714278"/>
+        </scene>
+        <!--Appearance View Controller-->
+        <scene sceneID="EG7-aH-WRJ">
+            <objects>
+                <viewController id="TjT-Ix-jzi" customClass="AppearanceViewController" customModule="Convert_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q5N-be-r8l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R5x-6P-dJM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtY-F4-eNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="929"/>
+        </scene>
+        <!--App Info View Controller-->
+        <scene sceneID="9Gi-cE-dS3">
+            <objects>
+                <viewController id="ZKY-0Y-WqH" customClass="AppInfoViewController" customModule="Convert_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iYt-k8-2kF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Yzf-fn-efr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yst-ue-eAg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYx-j3-53r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="117"/>
+        </scene>
+        <!--Day Finder-->
+        <scene sceneID="xEx-u8-cP1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eya-RR-q2R" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Day Finder" image="calendar" catalog="system" id="cfV-5q-rYl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Rho-3o-LFX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YK3-5z-04C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYX-9k-yOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.17391304347836" y="116.51785714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4SK-lx-CKw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DUG-ky-XbU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9wj-hI-fM1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eya-RR-q2R" kind="relationship" relationship="viewControllers" id="9RF-ZT-D15"/>
+                        <segue destination="tWH-cv-jHW" kind="relationship" relationship="viewControllers" id="hPV-Q8-OOU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnW-4U-ETZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="501"/>
+        </scene>
+        <!--Temperature-->
+        <scene sceneID="Fcx-IL-g9R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tWH-cv-jHW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Temperature" image="barometer" catalog="system" id="fai-dj-IgN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6UM-23-3eg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W7b-PB-Joo" kind="relationship" relationship="rootViewController" id="plr-bL-QnS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S28-jk-gS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="929"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SBa-ZF-rwd"/>
+        <segue reference="3pc-hg-qJe"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Image_1" width="1080" height="1920"/>
+        <image name="Image_2" width="1242" height="2208"/>
+        <image name="barometer" catalog="system" width="128" height="121"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="moon.circle" catalog="system" width="128" height="121"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
+        <image name="sun.min" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

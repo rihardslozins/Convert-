@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		B99F6C8625D40F6100333663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F6C8525D40F6100333663 /* AppDelegate.swift */; };
 		B99F6C8825D40F6100333663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F6C8725D40F6100333663 /* SceneDelegate.swift */; };
-		B99F6C8A25D40F6100333663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F6C8925D40F6100333663 /* ViewController.swift */; };
+		B99F6C8A25D40F6100333663 /* DayFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F6C8925D40F6100333663 /* DayFinderViewController.swift */; };
 		B99F6C8D25D40F6100333663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99F6C8B25D40F6100333663 /* Main.storyboard */; };
 		B99F6C8F25D40F6200333663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99F6C8E25D40F6200333663 /* Assets.xcassets */; };
 		B99F6C9225D40F6200333663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99F6C9025D40F6200333663 /* LaunchScreen.storyboard */; };
+		B99F6CA125D417F200333663 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B99F6CA025D417F200333663 /* Montserrat-Medium.ttf */; };
+		B99F6CA425D417FB00333663 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B99F6CA325D417FB00333663 /* Montserrat-SemiBold.ttf */; };
+		B99F6CA725D4180400333663 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B99F6CA625D4180400333663 /* Montserrat-Regular.ttf */; };
+		B9D909AE25D4292D00C50AA4 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D909AD25D4292D00C50AA4 /* TempViewController.swift */; };
+		B9D909B125D4294500C50AA4 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D909B025D4294500C50AA4 /* AppearanceViewController.swift */; };
+		B9D909B425D4295A00C50AA4 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D909B325D4295A00C50AA4 /* AppInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B99F6C8225D40F6100333663 /* Convert+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Convert+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99F6C8525D40F6100333663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B99F6C8725D40F6100333663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B99F6C8925D40F6100333663 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B99F6C8925D40F6100333663 /* DayFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFinderViewController.swift; sourceTree = "<group>"; };
 		B99F6C8C25D40F6100333663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B99F6C8E25D40F6200333663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B99F6C9125D40F6200333663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B99F6C9325D40F6200333663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99F6CA025D417F200333663 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		B99F6CA325D417FB00333663 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		B99F6CA625D4180400333663 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B9D909AD25D4292D00C50AA4 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		B9D909B025D4294500C50AA4 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
+		B9D909B325D4295A00C50AA4 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		B99F6C8425D40F6100333663 /* Convert+ */ = {
 			isa = PBXGroup;
 			children = (
-				B99F6C8525D40F6100333663 /* AppDelegate.swift */,
-				B99F6C8725D40F6100333663 /* SceneDelegate.swift */,
-				B99F6C8925D40F6100333663 /* ViewController.swift */,
-				B99F6C8B25D40F6100333663 /* Main.storyboard */,
+				B99F6C9A25D4125300333663 /* App Delegate */,
+				B99F6C9C25D4127200333663 /* Controller */,
+				B99F6C9D25D4128400333663 /* Views */,
+				B99F6C9F25D417D700333663 /* Fonts */,
 				B99F6C8E25D40F6200333663 /* Assets.xcassets */,
-				B99F6C9025D40F6200333663 /* LaunchScreen.storyboard */,
 				B99F6C9325D40F6200333663 /* Info.plist */,
 			);
 			path = "Convert+";
+			sourceTree = "<group>";
+		};
+		B99F6C9A25D4125300333663 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B99F6C8525D40F6100333663 /* AppDelegate.swift */,
+				B99F6C8725D40F6100333663 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		B99F6C9C25D4127200333663 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B99F6C8925D40F6100333663 /* DayFinderViewController.swift */,
+				B9D909AD25D4292D00C50AA4 /* TempViewController.swift */,
+				B9D909B025D4294500C50AA4 /* AppearanceViewController.swift */,
+				B9D909B325D4295A00C50AA4 /* AppInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B99F6C9D25D4128400333663 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B99F6C8B25D40F6100333663 /* Main.storyboard */,
+				B99F6C9025D40F6200333663 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B99F6C9F25D417D700333663 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B99F6CA325D417FB00333663 /* Montserrat-SemiBold.ttf */,
+				B99F6CA625D4180400333663 /* Montserrat-Regular.ttf */,
+				B99F6CA025D417F200333663 /* Montserrat-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99F6CA725D4180400333663 /* Montserrat-Regular.ttf in Resources */,
 				B99F6C9225D40F6200333663 /* LaunchScreen.storyboard in Resources */,
 				B99F6C8F25D40F6200333663 /* Assets.xcassets in Resources */,
+				B99F6CA125D417F200333663 /* Montserrat-Medium.ttf in Resources */,
 				B99F6C8D25D40F6100333663 /* Main.storyboard in Resources */,
+				B99F6CA425D417FB00333663 /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B99F6C8A25D40F6100333663 /* ViewController.swift in Sources */,
+				B9D909AE25D4292D00C50AA4 /* TempViewController.swift in Sources */,
+				B99F6C8A25D40F6100333663 /* DayFinderViewController.swift in Sources */,
+				B9D909B125D4294500C50AA4 /* AppearanceViewController.swift in Sources */,
 				B99F6C8625D40F6100333663 /* AppDelegate.swift in Sources */,
+				B9D909B425D4295A00C50AA4 /* AppInfoViewController.swift in Sources */,
 				B99F6C8825D40F6100333663 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

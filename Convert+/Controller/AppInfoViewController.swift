@@ -8,22 +8,17 @@
 import UIKit
 
 class AppInfoViewController: UIViewController {
+    
+    @IBOutlet weak var appInfoLabel: UILabel!
+    
+    let appInfoLabelText = "This app is created by Rihards and gives you great features, like finding days and temperature converter."
+    
+    @IBAction func infoButtonClose(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        appInfoLabel.text = appInfoLabelText
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

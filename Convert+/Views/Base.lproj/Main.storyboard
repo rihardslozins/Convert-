@@ -241,10 +241,64 @@
                     <view key="view" contentMode="scaleToFill" id="iYt-k8-2kF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="lZs-cd-fPJ">
+                                <rect key="frame" x="67" y="114" width="280" height="390"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="For_Info" translatesAutoresizingMaskIntoConstraints="NO" id="nWP-KU-EIb">
+                                        <rect key="frame" x="70" y="0.0" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="HUk-Rs-H2t"/>
+                                            <constraint firstAttribute="width" constant="140" id="M9s-FH-zCV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert Plus App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OED-ef-Dyr">
+                                        <rect key="frame" x="0.0" y="185" width="280" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="PZk-Ex-XdB"/>
+                                            <constraint firstAttribute="height" constant="80" id="TdM-b2-Kxr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9AC-EJ-vMd">
+                                        <rect key="frame" x="0.0" y="310" width="280" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="GuX-Ve-DCu"/>
+                                            <constraint firstAttribute="height" constant="80" id="Iwu-on-5zM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc5-Ph-a7B">
+                                <rect key="frame" x="354" y="20" width="40" height="40"/>
+                                <state key="normal" image="escape" catalog="system"/>
+                                <connections>
+                                    <action selector="infoButtonClose:" destination="ZKY-0Y-WqH" eventType="touchUpInside" id="HYH-2W-ZK1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Yzf-fn-efr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yzf-fn-efr" firstAttribute="trailing" secondItem="Oc5-Ph-a7B" secondAttribute="trailing" constant="20" id="67x-v7-hbm"/>
+                            <constraint firstItem="Yzf-fn-efr" firstAttribute="bottom" secondItem="lZs-cd-fPJ" secondAttribute="bottom" constant="304" id="GWm-RZ-xQE"/>
+                            <constraint firstItem="Yzf-fn-efr" firstAttribute="trailing" secondItem="lZs-cd-fPJ" secondAttribute="trailing" constant="67" id="bSA-ac-6yF"/>
+                            <constraint firstItem="Oc5-Ph-a7B" firstAttribute="top" secondItem="Yzf-fn-efr" secondAttribute="top" constant="20" id="deW-Cp-OiZ"/>
+                            <constraint firstItem="Oc5-Ph-a7B" firstAttribute="leading" secondItem="Yzf-fn-efr" secondAttribute="leading" constant="354" id="jZw-dt-Bor"/>
+                            <constraint firstItem="Yzf-fn-efr" firstAttribute="bottom" secondItem="Oc5-Ph-a7B" secondAttribute="bottom" constant="748" id="pj7-hx-bnh"/>
+                            <constraint firstItem="lZs-cd-fPJ" firstAttribute="top" secondItem="Yzf-fn-efr" secondAttribute="top" constant="114" id="uSf-0k-1hA"/>
+                            <constraint firstItem="lZs-cd-fPJ" firstAttribute="leading" secondItem="Yzf-fn-efr" secondAttribute="leading" constant="67" id="x4x-d9-3Bb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yst-ue-eAg"/>
+                    <connections>
+                        <outlet property="appInfoLabel" destination="9AC-EJ-vMd" id="SBb-gR-64Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYx-j3-53r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,6 +377,7 @@
         <segue reference="FER-Ph-Qoc"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="For_Info" width="1024" height="1024"/>
         <image name="Image_1" width="1080" height="1920"/>
         <image name="Image_2" width="1242" height="2208"/>
         <image name="barometer" catalog="system" width="128" height="121"/>

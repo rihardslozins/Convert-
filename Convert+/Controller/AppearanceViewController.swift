@@ -10,13 +10,13 @@ import UIKit
 class AppearanceViewController: UIViewController {
     
     @IBOutlet weak var appearanceTextLabel: UILabel!
-    
+    @IBOutlet weak var settingsButtonUI: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabelText()
+        settingsButtonUI.layer.cornerRadius = 12
     }
-    
     
     @IBAction func openSettingsButtonTapped(_ sender: Any) {
         openSettings()
@@ -38,9 +38,9 @@ class AppearanceViewController: UIViewController {
     func setLabelText() {
         var text = "Unable to specify User Interface Style"
         if self.traitCollection.userInterfaceStyle == .dark {
-            text = "Dark Mode is On \nGo to settings to change to Light Mode"
+            text = "Dark Mode is On"
         } else {
-            text = "Light Mode is On \nGo to settings to change to Dark Mode"
+            text = "Light Mode is On"
         }
         appearanceTextLabel.text = text
     }

@@ -334,12 +334,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-xE-11R">
-                                <rect key="frame" x="354" y="20" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-xE-11R">
+                                <rect key="frame" x="294" y="20" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aCg-df-ysy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="0.85882352939999995" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="escape" catalog="system"/>
+                                <state key="normal" title=" Return" image="escape" catalog="system">
+                                    <color key="titleColor" systemColor="tertiaryLabelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="closeButtonTapped:" destination="TjT-Ix-jzi" eventType="touchUpInside" id="GCz-tl-G4R"/>
                                 </connections>
@@ -351,7 +355,10 @@
                             <constraint firstItem="R5x-6P-dJM" firstAttribute="trailing" secondItem="zKz-Yv-sHf" secondAttribute="trailing" constant="67" id="AnF-1l-ooC"/>
                             <constraint firstItem="zKz-Yv-sHf" firstAttribute="leading" secondItem="R5x-6P-dJM" secondAttribute="leading" constant="67" id="Fr8-tc-zHj"/>
                             <constraint firstItem="zKz-Yv-sHf" firstAttribute="top" secondItem="R5x-6P-dJM" secondAttribute="top" constant="210" id="PgV-8d-KyO"/>
+                            <constraint firstItem="mkc-xE-11R" firstAttribute="top" secondItem="R5x-6P-dJM" secondAttribute="top" constant="20" id="Zlv-8L-ti4"/>
                             <constraint firstItem="R5x-6P-dJM" firstAttribute="bottom" secondItem="zKz-Yv-sHf" secondAttribute="bottom" constant="351" id="gLL-G7-ZBB"/>
+                            <constraint firstItem="mkc-xE-11R" firstAttribute="trailing" secondItem="Q5N-be-r8l" secondAttribute="trailingMargin" id="kbx-5g-ch5"/>
+                            <constraint firstItem="mkc-xE-11R" firstAttribute="leading" secondItem="R5x-6P-dJM" secondAttribute="leading" constant="294" id="qyu-zQ-IHI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -372,7 +379,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="lZs-cd-fPJ">
-                                <rect key="frame" x="67" y="114" width="280" height="390"/>
+                                <rect key="frame" x="67" y="143" width="280" height="390"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mount_image" translatesAutoresizingMaskIntoConstraints="NO" id="nWP-KU-EIb">
                                         <rect key="frame" x="70" y="0.0" width="140" height="140"/>
@@ -404,9 +411,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc5-Ph-a7B">
-                                <rect key="frame" x="354" y="20" width="40" height="40"/>
+                                <rect key="frame" x="294" y="20" width="100" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="0.85882352939999995" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="escape" catalog="system"/>
+                                <state key="normal" title=" Return" image="escape" catalog="system">
+                                    <color key="titleColor" systemColor="tertiaryLabelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="infoButtonClose:" destination="ZKY-0Y-WqH" eventType="touchUpInside" id="HYH-2W-ZK1"/>
                                 </connections>
@@ -416,12 +426,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Yzf-fn-efr" firstAttribute="trailing" secondItem="Oc5-Ph-a7B" secondAttribute="trailing" constant="20" id="67x-v7-hbm"/>
-                            <constraint firstItem="Yzf-fn-efr" firstAttribute="bottom" secondItem="lZs-cd-fPJ" secondAttribute="bottom" constant="304" id="GWm-RZ-xQE"/>
+                            <constraint firstItem="Yzf-fn-efr" firstAttribute="bottom" secondItem="lZs-cd-fPJ" secondAttribute="bottom" constant="275" id="GWm-RZ-xQE"/>
                             <constraint firstItem="Yzf-fn-efr" firstAttribute="trailing" secondItem="lZs-cd-fPJ" secondAttribute="trailing" constant="67" id="bSA-ac-6yF"/>
                             <constraint firstItem="Oc5-Ph-a7B" firstAttribute="top" secondItem="Yzf-fn-efr" secondAttribute="top" constant="20" id="deW-Cp-OiZ"/>
-                            <constraint firstItem="Oc5-Ph-a7B" firstAttribute="leading" secondItem="Yzf-fn-efr" secondAttribute="leading" constant="354" id="jZw-dt-Bor"/>
+                            <constraint firstItem="Oc5-Ph-a7B" firstAttribute="leading" secondItem="Yzf-fn-efr" secondAttribute="leading" constant="294" id="jZw-dt-Bor"/>
                             <constraint firstItem="Yzf-fn-efr" firstAttribute="bottom" secondItem="Oc5-Ph-a7B" secondAttribute="bottom" constant="748" id="pj7-hx-bnh"/>
-                            <constraint firstItem="lZs-cd-fPJ" firstAttribute="top" secondItem="Yzf-fn-efr" secondAttribute="top" constant="114" id="uSf-0k-1hA"/>
+                            <constraint firstItem="lZs-cd-fPJ" firstAttribute="top" secondItem="Yzf-fn-efr" secondAttribute="top" constant="143" id="uSf-0k-1hA"/>
                             <constraint firstItem="lZs-cd-fPJ" firstAttribute="leading" secondItem="Yzf-fn-efr" secondAttribute="leading" constant="67" id="x4x-d9-3Bb"/>
                         </constraints>
                     </view>
@@ -505,8 +515,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BmE-o6-3eu"/>
-        <segue reference="FER-Ph-Qoc"/>
+        <segue reference="5UJ-mU-VLD"/>
+        <segue reference="pyP-iH-epb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Light_Finder" width="1242" height="2208"/>

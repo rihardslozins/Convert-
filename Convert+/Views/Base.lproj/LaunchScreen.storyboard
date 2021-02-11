@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,12 +25,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert Plus App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-QR-cpJ">
-                                <rect key="frame" x="20" y="137" width="280" height="60"/>
+                                <rect key="frame" x="20" y="137" width="320" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="KBQ-Kf-CQE"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="jRd-u5-dDX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,7 +38,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pjp-QR-cpJ" secondAttribute="trailing" constant="114" id="0Co-mi-cQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pjp-QR-cpJ" secondAttribute="trailing" constant="74" id="0Co-mi-cQm"/>
                             <constraint firstAttribute="bottom" secondItem="hD6-k5-C6P" secondAttribute="bottom" id="2PQ-Vb-yT0"/>
                             <constraint firstItem="Pjp-QR-cpJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="3N0-zm-DYO"/>
                             <constraint firstItem="hD6-k5-C6P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Smv-0k-Wod"/>

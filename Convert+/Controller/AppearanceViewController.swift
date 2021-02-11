@@ -8,22 +8,47 @@
 import UIKit
 
 class AppearanceViewController: UIViewController {
-
+    
+    @IBOutlet weak var appearanceTextLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setLabelText()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func openSettingsButtonTapped(_ sender: Any) {
+        openSettings()
     }
-    */
-
+    
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func openSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
+        
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl, options: [:]) { (success) in
+            }
+        }
+    }
+    
+    func setLabelText() {
+        var text = "Unable to specify User Interface Style"
+        if self.traitCollection.userInterfaceStyle == .dark {
+            text = "Dark Mode is On \nGo to settings to change to Light Mode"
+        } else {
+            text = "Light Mode is On \nGo to settings to change to Dark Mode"
+        }
+        appearanceTextLabel.text = text
+    }
 }
+
+extension AppearanceViewController {
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setLabelText()
+    }
+    
+}//end
